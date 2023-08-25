@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <script
+      src="https://kit.fontawesome.com/f391d932aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <title>Fikirtepe Emlak Konut</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="img/emlak-logo.png"
+            alt="Emlak-Konut"
+            width="150"
+            height="auto" />
+          <img
+            src="img/fikirtepe-logo.png"
+            alt="Emlak-Konut"
+            width="150"
+            height="auto"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-list">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >Hakkımıza</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about2">Etaplar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Galeri
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fikirtepe Etap 2</a></li>
+                <li><a class="dropdown-item" href="#">Fikirtepe Etap 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#iletisim">İletşim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href=""
+                ><i class="fa-solid fa-phone-volume fa-beat-fade fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-fade carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/slider-1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="color: white">YENİ</h2>
+              <h2 style="color: white">FİKİRTEPE</h2>
+              <h2 style="color: white">ŞİMDİ</h2>
+              <h2 style="color: white">SATIŞTA</h2>
+              <p class="slider-1-text" style="color: white">
+                Güvenli, konforlu evleri; sosyal alanları, parkları, bahçeleri,
+                geniş bulvarlarıyla
+              </p>
+
+              <a href="#"
+                ><img class="play-icon" src="img/play-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/slider-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section id="about" class="container text-center">
+        <div class="row">
+          <div class="col text-start about-container">
+            <h2>Hakkımızda</h2>
+            <h3>Fikirtepe'de Yaşam</h3>
+            <p>
+              Yeni Fikirtepe’de yepyeni bir yaşam… Güvensiz yapılar, sağlıksız
+              yaşam alanları ile çevrili olan Fikirtepe, güvenli yapıları,
+              sosyal donatıları, yeşil alanları, 7/24 yaşayan prestij caddesi ve
+              ticari ünitelerin yer aldığı yeni hali ile dönüşüyor, İstanbul’un
+              en gözde yaşam alanlarından biri oluyor. Eğitim, sağlık, sosyal ve
+              kültürel alanlarıyla tüm detaylarının yeniden tasarlandığı,
+              insanların huzur ve güven içinde yaşayacağı, tamamlandığında
+              İstanbul’un yeni çekim merkezi olması beklenen Yeni Fikirtepe, hak
+              ettiği değerine ulaşıyor. 12.059 bağımsız bölümün, yeşil alanların
+              sürekliliğini bozmayacak şekilde yeniden konumlandırıldığı Yeni
+              Fikirtepe, Anadolu Yakası’nın çehresini değiştiriyor
+            </p>
+          </div>
+          <div class="col d-flex about-container2">
+            <h3>İstanbul'un Merkezinde</h3>
+            <h2>İNSAN ve ÇEVRE ODAKLI</h2>
+            <h2>YENİ FİKİRTEPE</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="about2">
+        <div class="container">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="img/18-Etap-slider1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-building fa-xl"
+                        style="color: #00964f"
+                      ></i>
+                      <span>18 Etap</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-2-11.285.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-desktop fa-xl"
+                        style="color: #00964f"
+                      ></i>
+                      <span>11.295 Konut</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-3-261-ticari.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span>261 Ticari Ünite</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-4.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span>261 Ticari Ünite</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-5.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span>503 Ofis</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-6.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-seedling fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+
+                      <span>Yeşil Alanlar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-7.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span>Sosyal Donatılar</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-8.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span style="font-size: 1.99rem"
+                        >12.059 Bağımsız Bölüm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="img/slider-9.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="columntext">
+                      <i
+                        class="fa-solid fa-print fa-xl"
+                        style="color: #009f4f"
+                      ></i>
+                      <span>18 Etap</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-8 p-2">
+              <h3 class="p-2">
+                Lokasyon -
+                <span style="color: #004f9f">İSTANBUL / KADIKÖY</span>
+              </h3>
+              <p style="width: 75%" class="p-2">
+                Ulaşım açısından ana yolların kesişim noktasında yer alan
+                Fikirtepe Kentsel Dönüşüm Projesi hastanelere, okullara ve
+                alışveriş merkezlerine yakın konumda bulunmaktadır. Kadıköy’e,
+                Üsküdar’a veya Tarihi Yarımada’ya yürüme mesafesindeki metro ile
+                ulaşım imkanı bulunmaktadır.
+              </p>
+            </div>
+            <div class="col md-4 text-end">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/000000/marker--v1.png"
+                alt="marker--v1"
+              />
+              <h4>Adres</h4>
+              <p>
+                Merdivenköy, Yumurtacı Abdibey Cd., No:19, 34720
+                Kadıköy/İstanbul T: 444 36 55
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="location m-0 p-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.305983426266!2d29.095695375622125!3d40.9966755201399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac61d45966a63%3A0x57bab4ceda23f8b!2sEmlak%20Konut%20GYO%20A.%C5%9E.!5e0!3m2!1str!2str!4v1692260081372!5m2!1str!2str"
+            width="1450"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div class="location-list">
+            <div class="container-text" style="opacity: 1">
+              <ul>
+                <li>
+                  <i
+                    class="fa-solid fa-location-dot fa-beat fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Merkezi Konum
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-shop fa-beat fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Alışveriş Merkezi
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-building-columns fa-beat fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Üniversiteler
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-truck-medical fa-beat fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Hastaneler
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-bus fa-lg fa-beat"
+                    style="color: #ffffff"
+                  ></i
+                  >Toplu Taşıma Yürüme Mesafesinde
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary btn-md location-btn">
+                Konuma Git
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="virtual">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 image-container">
+              <a href="" target="_blank"
+                ><img src="img/image-link.jpg" alt="" />
+                <div class="image-text">3D Görüntülemek için Tıklayın</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="etap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="etap-text">
+                <h3>Keşfet</h3>
+                <h2>Yeni Fikirtepe Etapları</h2>
+                <div class="dropdown">
+                  <button
+                    class=""
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tümü
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Tümü</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Satışta Olan Parseller</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Satışı Planlanan parseller</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
