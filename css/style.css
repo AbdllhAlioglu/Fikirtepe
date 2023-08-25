@@ -1,36 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;700&family=Poppins&display=swap");
 
-.carousel-caption h2 {
+.slider-1 {
   position: relative;
-  top: -220px;
-  left: 300px;
-  font-size: 4rem;
-  text-shadow: 2px -2px 3px rgba(0, 0, 0, 1);
-  text-align: left;
+}
+
+#slider-1 {
+  margin: 0;
+  padding: 0;
 }
 
 .slider-1-text {
-  width: 250px;
-  color: white;
-  font-family: helvetica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  font-variant: normal;
-  line-height: 23px;
-  text-align: left;
-  text-decoration: none;
-  word-spacing: 3px;
-  text-transform: none;
-  position: relative;
-  top: -200px;
-  left: 300px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
 }
 
-.play-icon {
-  position: relative;
-  top: -100px;
-  left: -150px;
+.slider-1-text h3 {
+  color: white;
+
+  font-size: 3rem;
+  margin: 2rem;
+  text-shadow: 4px 0px 5px rgba(0, 0, 0, 1);
+}
+.slider-1-text p {
+  color: white;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 2rem;
+  text-shadow: 4px 0px 5px rgba(0, 0, 0, 1);
 }
 
 .navbar-list ul li a {
@@ -145,4 +142,124 @@ section {
 
 .image-container:hover .image-text {
   opacity: 0.6;
+}
+
+.etap-text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#galeri .container .fikirtepe-etap {
+  font-weight: 600;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media i {
+  padding: 1rem 0.3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 60px;
+  height: 6px;
+  border: none;
+  border-radius: 24px;
+}
+
+.carousel-indicators [data-bs-target] span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7952b3;
+  border-radius: inherit;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.container-slider {
+  display: flex;
+  flex-direction: row;
+}
+.location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Harita ve liste arasına boşluk ekler */
+}
+
+.map {
+  align-self: flex-end; /* Haritayı sağa hizalar */
+}
+
+/* Küçük ekranlar için stil */
+@media (max-width: 768px) {
+  .location-container {
+    flex-direction: column; /* Dikey düzende sıralar */
+  }
+
+  .map {
+    align-self: flex-start; /* Haritayı yukarıda hizalar */
+  }
+}
+
+.slider-img-etap {
+  max-height: 300px;
+}
+
+.last-slider img {
+  max-height: auto !important;
+}
+
+.carousel-control-next-icon:after {
+  font-size: 55px;
+  color: white;
+}
+
+.carousel-control-prev-icon:after {
+  font-size: 55px;
+  color: white;
 }

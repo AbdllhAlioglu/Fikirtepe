@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <script src="path/to/jquery.js"></script>
+    <script src="path/to/flickity.pkgd.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f391d932aa.js"
       crossorigin="anonymous"
@@ -24,63 +32,72 @@
     <title>Fikirtepe Emlak Konut</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="#">
+          <img
             src="img/emlak-logo.png"
             alt="Emlak-Konut"
             width="150"
-            height="auto" />
+            height="auto"
+          />
           <img
             src="img/fikirtepe-logo.png"
             alt="Emlak-Konut"
             width="150"
             height="auto"
-        /></a>
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-list">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >Hakkımıza</a
-              >
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active pe-4">
+              <a class="nav-link" href="#about">Hakkımızda</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pe-4">
               <a class="nav-link" href="#about2">Etaplar</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown pe-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
+                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Galeri
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Fikirtepe Etap 2</a></li>
-                <li><a class="dropdown-item" href="#">Fikirtepe Etap 3</a></li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item pe-4" href="#galeri"
+                    >Fikirtepe Etap 2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item pe-4" href="#galeri"
+                    >Fikirtepe Etap 3</a
+                  >
+                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#iletisim">İletşim</a>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#lokasyon">İletişim</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href=""
-                ><i class="fa-solid fa-phone-volume fa-beat-fade fa-lg"></i
-              ></a>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="mailto:destek@example.com">
+                <i class="fas fa-phone-volume"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -88,68 +105,65 @@
     </nav>
 
     <main>
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-fade carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="img/slider-1.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h2 style="color: white">YENİ</h2>
-              <h2 style="color: white">FİKİRTEPE</h2>
-              <h2 style="color: white">ŞİMDİ</h2>
-              <h2 style="color: white">SATIŞTA</h2>
-              <p class="slider-1-text" style="color: white">
-                Güvenli, konforlu evleri; sosyal alanları, parkları, bahçeleri,
-                geniş bulvarlarıyla
-              </p>
-
-              <a href="#"
-                ><img class="play-icon" src="img/play-icon.png" alt=""
-              /></a>
+      <section id="slider-1 ">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide slider-1"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="img/slider-1.jpg" class="d-block w-100" alt="..." />
+              <div class="slider-1-text d-none d-md-block">
+                <h3>YENİ <span class="d-block">FİKİRTEPE</span></h3>
+                <h3>ŞİMDİ SATIŞTA</h3>
+                <p>
+                  Güvenli konforlu evleri; sosyal alanları, parkları, bahçeleri,
+                  geniş bulvarlarıyla
+                </p>
+                <p>#Fikirtepegüzelleşiyor</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="img/slider-2.jpg" class="d-block w-100" alt="..." />
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/slider-2.jpg" class="d-block w-100" alt="..." />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </section>
       <section id="about" class="container text-center">
         <div class="row">
           <div class="col text-start about-container">
@@ -360,7 +374,7 @@
         <div class="container">
           <div class="row">
             <div class="col col-md-8 p-2">
-              <h3 class="p-2">
+              <h3 id="lokasyon" class="p-2">
                 Lokasyon -
                 <span style="color: #004f9f">İSTANBUL / KADIKÖY</span>
               </h3>
@@ -390,9 +404,8 @@
         <div class="location m-0 p-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.305983426266!2d29.095695375622125!3d40.9966755201399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac61d45966a63%3A0x57bab4ceda23f8b!2sEmlak%20Konut%20GYO%20A.%C5%9E.!5e0!3m2!1str!2str!4v1692260081372!5m2!1str!2str"
-            width="1450"
             height="500"
-            style="border: 0"
+            style="border: 0; width: 100%; aspect-ratio: 16/9"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -462,13 +475,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="etap-text">
-                <h3>Keşfet</h3>
-                <h2>Yeni Fikirtepe Etapları</h2>
-                <div class="dropdown">
+              <div class="etap-text d-flex">
+                <h3 class="mt-3">Keşfet</h3>
+                <h2 class="font-weight-bold" style="color: #004f9fff">
+                  Yeni Fikirtepe Etapları
+                </h2>
+
+                <div class="dropdown mt-3 ms-4">
                   <button
-                    class=""
-                    class="btn btn-secondary dropdown-toggle"
+                    class="btn btn-secondary dropdown-toggle bg-primary"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -476,17 +491,15 @@
                     Tümü
                   </button>
                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tümü</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Tümü</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        Satışta Olan Parseller</a
+                      <a class="dropdown-item" href="#"
+                        >Satışta Olan Parseller</a
                       >
                     </li>
                     <li>
                       <a class="dropdown-item" href="#"
-                        >Satışı Planlanan parseller</a
+                        >Satışı Planlanan Parseller</a
                       >
                     </li>
                   </ul>
@@ -496,9 +509,402 @@
           </div>
         </div>
       </section>
+
+      <section id="etaps">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-12 image-etap">
+              <img src="img/fikirtepe_map.jpg" class="img-fluid" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeri">
+        <div class="container">
+          <h3>Görseller</h3>
+          <h3
+            class="font-weight-bold"
+            style="color: #00964fff; margin-bottom: 4rem"
+          >
+            Yeni Fikirtepe Etaplar
+          </h3>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 h-100">
+              <div
+                id="carouselExampleControls1"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/slider-1.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/slider-2-11.285.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleControls1"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    data-bs-target="#carouselExampleControls1"
+                    data-bs-slide-to="0"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleControls1"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    data-bs-target="#carouselExampleControls1"
+                    data-bs-slide-to="1"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                id="carouselExampleControls2"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/slider-1.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/slider-2-11.285.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/slider-6.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleControls2"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    data-bs-target="#carouselExampleControls2"
+                    data-bs-slide-to="0"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleControls2"
+                  data-bs-target="#carouselExampleControls2"
+                  role="button"
+                  data-bs-slide-to="1"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeries">
+        <div class="ms-4 mt-4">
+          <h3>Görseller</h3>
+          <h3
+            class="font-weight-bold"
+            style="color: #00964fff; margin-bottom: 4rem"
+          >
+            Yeni Fikirtepe
+          </h3>
+        </div>
+
+        <div
+          id="carouselExampleSlider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-pause="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              <span></span>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            >
+              <span></span>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            >
+              <span></span>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            >
+              <span></span>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            >
+              <span></span>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlider"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            >
+              <span></span>
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/last-slide1.jfif" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/last-slide-2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/last-slide-3.jfif"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/last-slide-4.jfif"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/last-slide-5.jfif"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="img/last-slide-6.jpg" class="d-block" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <!-- <footer class="py-5" style="border-top: 5px solid #00964f">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md -6 d-flex footer-image">
+            <img
+              src="img/CSB_logo.png"
+              class="img-thumbnail"
+              width="136"
+              height="89"
+              alt="..."
+            />
+            <img
+              src="img/toki_logo.png"
+              class="img-thumbnail"
+              width="136"
+              height="89"
+              alt="..."
+            />
+            <img
+              src="img/emlak-logo.png"
+              class="img-thumbnail"
+              width="136"
+              height="89"
+              alt="..."
+            />
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>İletişim</h5>
+            <p>Size nasıl yardımcı olabiliriz?</p>
+            <h2 style="color: #00964f">444 36 55</h2>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Sosyal medya</h5>
+            <p>Bizi takip edebilirsiniz..</p>
+            <h2 style="color: #00964f">444 36 55</h2>
+            <div class="social-media">
+              <i
+                class="fa-brands fa-facebook fa-2xl"
+                style="color: #00964f"
+              ></i>
+              <i
+                class="fa-brands fa-square-instagram fa-2xl"
+                style="color: #00964f"
+              ></i>
+              <i
+                class="fa-brands fa-square-x-twitter fa-2xl"
+                style="color: #00964f"
+              ></i>
+              <i
+                class="fa-brands fa-square-youtube fa-2xl"
+                style="color: #00964f"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>&copy; Emlak Konut GYO © 2022. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer> -->
+
+    <hr style="border: #00964f 4px solid" />
+
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="my-4 col-6 d-flex">
+            <img
+              src="img/CSB_logo.png"
+              class="img-fluid mx-3"
+              style="max-height: 80px"
+            />
+            <img
+              src="img/toki_logo.png"
+              class="img-fluid mx-3"
+              style="max-height: 80px"
+            />
+            <img
+              src="img/emlak-logo.png"
+              class="img-fluid mx-3"
+              style="max-height: 80px"
+            />
+          </div>
+          <div class="my-4 col col-3">
+            <h5>İletişim</h5>
+            <h5 style="color: #585858e5">Size nasıl yardımcı olabiliriz?</h5>
+            <h3 style="color: green; font-weight: bolder">444 36 55</h3>
+          </div>
+
+          <div class="my-4 col col-3">
+            <h5>Sosyal Medya</h5>
+            <h5 style="color: #585858e5">Bizi takip edebilirsiniz.</h5>
+            <ul class="nav flex-row">
+              <li class="nav-item mx-2 my-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  ><i
+                    class="fa-brands fa-facebook fa-2xl"
+                    style="color: #0a964f"
+                  ></i>
+                </a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  ><i
+                    class="fa-brands fa-square-instagram fa-2xl"
+                    style="color: #0a964f"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  ><i
+                    class="fa-brands fa-square-twitter fa-2xl"
+                    style="color: #0a964f"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  ><i
+                    class="fa-brands fa-square-youtube fa-2xl"
+                    style="color: #0a964f"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
