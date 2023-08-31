@@ -1,3 +1,15 @@
+//document.addEventListener(function () {
+var scrolllink = document.getElementById("scrolllink");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 500) {
+    scrolllink.style.display = "block";
+  } else {
+    scrolllink.style.display = "none";
+  }
+});
+// });
+
 const myCarousel = document.getElementById("carouselExampleIndicators");
 const carouselIndicators = myCarousel.querySelectorAll(
   ".carousel-indicators button span"
@@ -52,4 +64,4 @@ $(".carousel").carousel({
   pause: "false",
 });
 
-// navbar
+// scroll

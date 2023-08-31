@@ -33,7 +33,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+      <div class="container" id="navbar">
         <a class="navbar-brand" href="#">
           <img
             src="img/emlak-logo.png"
@@ -462,7 +462,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 image-container">
-              <a href="" target="_blank"
+              <a
+                href="https://fikirtepe.emlakkonut.com.tr/tr/vr"
+                target="_blank"
                 ><img src="img/image-link.jpg" alt="" />
                 <div class="image-text">3D Görüntülemek için Tıklayın</div>
               </a>
@@ -542,14 +544,21 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="img/slider-1.jpg"
+                      src="img/yeni-slayt-1.jpg"
                       class="d-block w-100 slider-img-etap"
                       alt="..."
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="img/slider-2-11.285.jpg"
+                      src="img/yeni-slayt-2.jpg"
+                      class="d-block w-100 slider-img-etap"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/yeni-slayt-2.jpg"
                       class="d-block w-100 slider-img-etap"
                       alt="..."
                     />
@@ -594,14 +603,14 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="img/slider-1.jpg"
+                      src="img/yeni-slayt-8.jpg"
                       class="d-block w-100 slider-img-etap"
                       alt="..."
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="img/slider-2-11.285.jpg"
+                      src="img/yeni-slayt-9.jpg"
                       class="d-block w-100 slider-img-etap"
                       alt="..."
                     />
@@ -771,139 +780,58 @@
       </section>
     </main>
 
-    <!-- <footer class="py-5" style="border-top: 5px solid #00964f">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md -6 d-flex footer-image">
-            <img
-              src="img/CSB_logo.png"
-              class="img-thumbnail"
-              width="136"
-              height="89"
-              alt="..."
-            />
-            <img
-              src="img/toki_logo.png"
-              class="img-thumbnail"
-              width="136"
-              height="89"
-              alt="..."
-            />
-            <img
-              src="img/emlak-logo.png"
-              class="img-thumbnail"
-              width="136"
-              height="89"
-              alt="..."
-            />
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>İletişim</h5>
-            <p>Size nasıl yardımcı olabiliriz?</p>
-            <h2 style="color: #00964f">444 36 55</h2>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Sosyal medya</h5>
-            <p>Bizi takip edebilirsiniz..</p>
-            <h2 style="color: #00964f">444 36 55</h2>
-            <div class="social-media">
-              <i
-                class="fa-brands fa-facebook fa-2xl"
-                style="color: #00964f"
-              ></i>
-              <i
-                class="fa-brands fa-square-instagram fa-2xl"
-                style="color: #00964f"
-              ></i>
-              <i
-                class="fa-brands fa-square-x-twitter fa-2xl"
-                style="color: #00964f"
-              ></i>
-              <i
-                class="fa-brands fa-square-youtube fa-2xl"
-                style="color: #00964f"
-              ></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-        >
-          <p>&copy; Emlak Konut GYO © 2022. Tüm hakları saklıdır.</p>
-        </div>
-      </div>
-    </footer> -->
-
     <hr style="border: #00964f 4px solid" />
 
-    <div class="container">
-      <footer>
-        <div class="row">
-          <div class="my-4 col-6 d-flex">
+    <footer class="footer">
+      <div class="row d-flex">
+        <div class="col-md-4 col-sm-12 d-flex footer-image align-items-stretch">
+          <div class="col">
             <img
-              src="img/CSB_logo.png"
-              class="img-fluid mx-3"
-              style="max-height: 80px"
-            />
-            <img
-              src="img/toki_logo.png"
-              class="img-fluid mx-3"
-              style="max-height: 80px"
-            />
-            <img
-              src="img/emlak-logo.png"
-              class="img-fluid mx-3"
-              style="max-height: 80px"
+              src="img/CSB_logo.png "
+              class="img-fluid align-items-stretch"
+              alt=""
             />
           </div>
-          <div class="my-4 col col-3">
-            <h5>İletişim</h5>
-            <h5 style="color: #585858e5">Size nasıl yardımcı olabiliriz?</h5>
-            <h3 style="color: green; font-weight: bolder">444 36 55</h3>
+          <div class="col">
+            <img src="img/toki_logo (Özel).png" class="img-fluid" alt="" />
           </div>
-
-          <div class="my-4 col col-3">
-            <h5>Sosyal Medya</h5>
-            <h5 style="color: #585858e5">Bizi takip edebilirsiniz.</h5>
-            <ul class="nav flex-row">
-              <li class="nav-item mx-2 my-2">
-                <a href="#" class="nav-link p-0 text-muted"
-                  ><i
-                    class="fa-brands fa-facebook fa-2xl"
-                    style="color: #0a964f"
-                  ></i>
-                </a>
-              </li>
-              <li class="nav-item mx-2 my-2">
-                <a href="#" class="nav-link p-0 text-muted"
-                  ><i
-                    class="fa-brands fa-square-instagram fa-2xl"
-                    style="color: #0a964f"
-                  ></i
-                ></a>
-              </li>
-              <li class="nav-item mx-2 my-2">
-                <a href="#" class="nav-link p-0 text-muted"
-                  ><i
-                    class="fa-brands fa-square-twitter fa-2xl"
-                    style="color: #0a964f"
-                  ></i
-                ></a>
-              </li>
-              <li class="nav-item mx-2 my-2">
-                <a href="#" class="nav-link p-0 text-muted"
-                  ><i
-                    class="fa-brands fa-square-youtube fa-2xl"
-                    style="color: #0a964f"
-                  ></i
-                ></a>
-              </li>
-            </ul>
+          <div class="col">
+            <img src="img/emlak-logo.png" class="img-fluid" alt="" />
           </div>
         </div>
-      </footer>
+        <div class="col-md-4 col-sm-12 text-center">
+          <h5>İletişim</h5>
+          <p>Size nasıl yardımcı olabiliriz?</p>
+          <h2 style="color: #00964f">444 36 55</h2>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+          <h5>Sosyal medya</h5>
+          <p>Bizi takip edebilirsiniz..</p>
+
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #00964f"></i>
+          <i
+            class="fa-brands fa-square-instagram fa-2xl"
+            style="color: #00964f"
+          ></i>
+          <i
+            class="fa-brands fa-square-x-twitter fa-2xl"
+            style="color: #00964f"
+          ></i>
+          <i
+            class="fa-brands fa-square-youtube fa-2xl"
+            style="color: #00964f"
+          ></i>
+        </div>
+      </div>
+    </footer>
+    <div class="wrapper">
+      <a id="scrolllink" class="show" href="#navbar">
+        <i
+          class="fa-regular fa-hand-point-up fa-bounce fa-2xl"
+          style="color: #004f9f"
+        ></i>
+        <p>Kaydır</p>
+      </a>
     </div>
 
     <script src="script.js"></script>
