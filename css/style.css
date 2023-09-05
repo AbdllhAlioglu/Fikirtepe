@@ -329,7 +329,9 @@ section {
 }
 
 @media (max-width: 992px) {
-  #etaps .image-etaps-icon {
+  #etaps .image-etaps-icon,
+  #etaps .image-etaps-icon-5,
+  #etaps .image-etaps-icon-14 {
     display: none;
   }
 }
