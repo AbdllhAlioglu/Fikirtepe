@@ -83,7 +83,7 @@ section {
   top: 0%;
   left: 60%;
   width: 40%;
-  height: 500px;
+  height: 100%;
   background-color: black;
   opacity: 0.7;
 }
@@ -93,6 +93,12 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   margin: 3rem 2rem;
+}
+
+@media (max-width: 992px) {
+  .location-list {
+    display: none;
+  }
 }
 
 .location-list .container-text ul {
@@ -286,4 +292,108 @@ section {
 
 #scrolllink {
   display: none;
+}
+
+/* **************************************************************************************************************** */
+
+#etaps {
+  position: relative;
+}
+
+#etaps .image-etaps-icon {
+  position: absolute;
+  top: 23%;
+  left: 79%;
+}
+.image-etaps-icon p {
+  font-size: 1rem;
+}
+
+#etaps .image-etaps-icon-5 {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+}
+.image-etaps-icon-5 p {
+  font-size: 1rem;
+}
+
+#etaps .image-etaps-icon-14 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+
+.image-etaps-icon-14 p {
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  #etaps .image-etaps-icon {
+    display: none;
+  }
+}
+
+footer .footer-img {
+  height: 5rem;
+  width: auto;
+}
+
+/* Etaps */
+
+#gizliDiv {
+  display: none;
+  position: absolute;
+  background-color: #00964f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#gizliDiv-5 {
+  display: none;
+  position: absolute;
+  background-color: #00964f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#gizliDiv-14 {
+  display: none;
+  position: absolute;
+  background-color: #00964f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#link:hover + #gizliDiv {
+  display: block;
+}
+
+#link-5:hover + #gizliDiv-5 {
+  display: block;
+}
+#link-14:hover + #gizliDiv-14 {
+  display: block;
+}
+
+#etaps {
+  position: relative;
+}
+
+.click-div {
+  position: absolute;
+  top: 30.5%;
+}
+
+.click-div-5 {
+  position: absolute;
+  top: 30.5%;
+}
+
+.click-div-14 {
+  position: absolute;
+  top: 40%;
 }
