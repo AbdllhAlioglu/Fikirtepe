@@ -89,38 +89,17 @@ kapatIcon.addEventListener("click", function () {
 
 // ***************************
 
-var link = document.getElementById("link");
+// Fonksiyon ile tekrarlanan işlemi yapabilirsiniz
+function ck(linkId, gizliDivId) {
+  var linkElement = document.getElementById(linkId);
+  var gizliDivElement = document.getElementById(gizliDivId);
 
-// Gizli div'i bulun
-var gizliDiv = document.getElementById("gizliDiv");
+  linkElement.addEventListener("click", function (e) {
+    e.preventDefault();
+    gizliDivElement.style.display = "block";
+  });
+}
 
-// Tıklama olayını dinleyin
-link.addEventListener("click", function (e) {
-  e.preventDefault(); // Sayfa yenilenmesini engellemek için gereken bir önlem
-  // Gizli div'i görünür hale getirin
-  gizliDiv.style.display = "block";
-});
-
-var link5 = document.getElementById("link-5");
-
-// Gizli div'i bulun
-var gizliDiv5 = document.getElementById("gizliDiv-5");
-
-// Tıklama olayını dinleyin
-link5.addEventListener("click", function (e) {
-  e.preventDefault(); // Sayfa yenilenmesini engellemek için gereken bir önlem
-  // Gizli div'i görünür hale getirin
-  gizliDiv5.style.display = "block";
-});
-
-var link14 = document.getElementById("link-14");
-
-// Gizli div'i bulun
-var gizliDiv14 = document.getElementById("gizliDiv-14");
-
-// Tıklama olayını dinleyin
-link14.addEventListener("click", function (e) {
-  e.preventDefault(); // Sayfa yenilenmesini engellemek için gereken bir önlem
-  // Gizli div'i görünür hale getirin
-  gizliDiv14.style.display = "block";
-});
+handleLinkClick("link", "gizliDiv");
+handleLinkClick("link-5", "gizliDiv-5");
+handleLinkClick("link-14", "gizliDiv-14");
