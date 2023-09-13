@@ -65,41 +65,8 @@ $(".carousel").carousel({
   pause: "false",
 });
 
-// Tıklanan link öğesini bulun
+// Tıklanan link öğesini bul
 var link = document.getElementById("link");
 
-// Gizli div'i bulun
+// Gizli div'i bul
 var gizliDiv = document.getElementById("gizliDiv");
-
-// Kapatma ikonunu bulun
-var kapatIcon = document.getElementById("kapatIcon");
-
-// Tıklama olayını dinleyin
-link.addEventListener("click", function (e) {
-  e.preventDefault(); // Sayfa yenilenmesini engellemek için gereken bir önlem
-  // Gizli div'i görünür hale getirin
-  gizliDiv.style.display = "block";
-});
-
-// Kapatma ikonuna tıklama olayını dinleyin
-kapatIcon.addEventListener("click", function () {
-  // Gizli div'i tekrar gizleyin
-  gizliDiv.style.display = "none";
-});
-
-// ***************************
-
-// Fonksiyon ile tekrarlanan işlemi yapabilirsiniz
-function ck(linkId, gizliDivId) {
-  var linkElement = document.getElementById(linkId);
-  var gizliDivElement = document.getElementById(gizliDivId);
-
-  linkElement.addEventListener("click", function (e) {
-    e.preventDefault();
-    gizliDivElement.style.display = "block";
-  });
-}
-
-handleLinkClick("link", "gizliDiv");
-handleLinkClick("link-5", "gizliDiv-5");
-handleLinkClick("link-14", "gizliDiv-14");
