@@ -353,7 +353,7 @@ footer .footer-img {
 }
 
 #gizliDiv-5 {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #00964f;
   color: white;
@@ -362,7 +362,7 @@ footer .footer-img {
 }
 
 #gizliDiv-14 {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #00964f;
   color: white;
@@ -375,10 +375,10 @@ footer .footer-img {
 }
 
 #link-5:hover + #gizliDiv-5 {
-  display: block;
+  visibility: visible;
 }
 #link-14:hover + #gizliDiv-14 {
-  display: block;
+  visibility: visible;
 }
 
 #etaps {
